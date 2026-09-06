@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的学习计划</title>
+<style>
+  :root{--bg:#f4f6fb;--ink:#17233b;--muted:#5d6b85;--accent:#2563eb;--accent2:#0d9488}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;color:var(--ink);line-height:1.7;background:
+    radial-gradient(900px 420px at 12% -5%,rgba(37,99,235,.08),transparent 60%),
+    radial-gradient(800px 420px at 95% 8%,rgba(13,148,136,.08),transparent 60%),var(--bg);
+    display:flex;align-items:center;justify-content:center;padding:1.25rem}
+  main{width:100%;max-width:760px}
+  .hero{position:relative;overflow:hidden;color:#fff;text-align:center;border-radius:20px;padding:2.6rem 1.5rem 2.2rem;margin-bottom:1.4rem;
+    background:radial-gradient(600px 300px at 85% 20%,rgba(13,148,136,.45),transparent 65%),
+    radial-gradient(500px 260px at 8% 90%,rgba(124,58,237,.28),transparent 60%),
+    linear-gradient(135deg,#1e3a8a 0%,#2563eb 48%,#0d9488 100%)}
+  .hero::after{content:'';position:absolute;inset:0;background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:42px 42px;pointer-events:none}
+  .hero>*{position:relative;z-index:1}
+  .hero h1{font-weight:700;font-size:1.7rem;margin-bottom:.5rem}
+  .hero p{font-size:.92rem;opacity:.92}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  @media(max-width:640px){.cards{grid-template-columns:1fr}}
+  .card{display:block;text-decoration:none;color:var(--ink);background:rgba(255,255,255,.85);
+    border:1px solid rgba(37,99,235,.14);border-radius:16px;padding:1.4rem 1.4rem 1.3rem;
+    box-shadow:0 2px 14px rgba(37,99,235,.07);transition:transform .15s ease,box-shadow .15s ease}
+  .card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(37,99,235,.14)}
+  .card .k{display:inline-block;font-size:.72rem;font-weight:700;padding:.14rem .6rem;border-radius:999px;margin-bottom:.7rem}
+  .card .k.long{background:rgba(37,99,235,.12);color:#1d4ed8}
+  .card .k.week{background:rgba(124,58,237,.12);color:#6d28d9}
+  .card h2{font-size:1.15rem;margin-bottom:.35rem}
+  .card p{font-size:.85rem;color:var(--muted)}
+  .card .go{display:inline-block;margin-top:.8rem;font-size:.83rem;font-weight:700;color:var(--accent2)}
+  .card .go::after{content:' →'}
+  footer{text-align:center;color:var(--muted);font-size:.78rem;margin-top:1.6rem}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <h1>我的学习计划</h1>
+    <p>2026-2027-1 学期 · 每日作息 + 第一周具体安排</p>
+  </header>
+  <div class="cards">
+    <a class="card" href="semester-schedule-2026.html">
+      <span class="k long">长期 · 每日</span>
+      <h2>学期每日作息日程表</h2>
+      <p>整学期每天 07:25-22:00 的作息安排：课程、作业、英语、项目、运动全在日历里。</p>
+      <span class="go">打开长期计划</span>
+    </a>
+    <a class="card" href="week1-study-plan.html">
+      <span class="k week">第 1 周 · 9.07-9.13</span>
+      <h2>第一周学习内容安排</h2>
+      <p>每天每个时段学什么、产出什么，含 Java 一周冲刺路线与碳市场工具攻坚启动。</p>
+      <span class="go">打开第一周计划</span>
+    </a>
+  </div>
+  <footer>由 Trae 生成 · 永久网址，任何设备随时可看</footer>
+</main>
+</body>
+</html>
